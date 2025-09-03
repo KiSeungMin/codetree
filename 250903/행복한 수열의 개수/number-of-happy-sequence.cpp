@@ -19,10 +19,15 @@ int main() {
 
     // Please write your code here.
     int answer = 0;
-    for(int i = 0; i < n; i++){
-        answer += (checkRow(i) ? 1 : 0);
-        answer += (checkCol(i) ? 1 : 0);
+    if (n == 1){
+        answer = 2;
+    } else {
+        for(int i = 0; i < n; i++){
+            answer += (checkRow(i) ? 1 : 0);
+            answer += (checkCol(i) ? 1 : 0);
+        }
     }
+    
 
     cout<<answer<<"\n";
     return 0;
@@ -40,7 +45,7 @@ bool checkRow(int row) {
             count = 1;
         }
 
-        if(count >= m) {
+        if(count == m) {
             return true;
         }
     }

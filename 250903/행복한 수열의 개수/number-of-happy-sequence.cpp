@@ -60,7 +60,7 @@ bool checkCol(int col) {
             count = 1;
         }
 
-        if(count >= m) {
+        if(count == m) {
             return true;
         }
     }

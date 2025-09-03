@@ -31,7 +31,7 @@ int getBox(int start_row, int start_col) {
 }
 
 int getRowStick(int start_row, int start_col) {
-    if(start_col + 2 >= n) {
+    if(start_col + 2 >= m) {
         return 0;
     }
 

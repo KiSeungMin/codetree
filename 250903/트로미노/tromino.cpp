@@ -14,7 +14,7 @@ int min(int a, int b){
 }
 
 int getBox(int start_row, int start_col) {
-    if (start_row + 1 >= n || start_col + 1 >= n) {
+    if (start_row + 1 >= n || start_col + 1 >= m) {
         return 0;
     }
 
